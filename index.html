@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORGANICTECH - Gestión Documental</title>
+  <link rel="icon" href="logo.jpg" type="image/png"> <!-- Cambia el enlace al favicon aquí -->
+  <meta name="description" content="ORGANICTECH, una empresa innovadora en gestión documental.">
+  <style>
+    /* Estilos generales */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; background-color: #f8f8f8; }
+    header, .section, footer { padding: 60px 20px; text-align: center; }
+    .container { max-width: 1200px; margin: auto; }
+
+    /* Estilo del encabezado */
+    header { background-color: #003366; color: #fff; padding: 40px 20px; }
+    
+    /* Navegación */
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    /* Sección Hero */
+    .hero { background-color: #00509E; color: #fff; padding: 80px 20px; }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+
+    /* Estilos de sección */
+    .section h2 { color: #003366; margin-bottom: 20px; font-size: 2em; }
+    .section p { max-width: 800px; margin: auto; margin-bottom: 30px; font-size: 1.1em; }
+
+    /* Carrusel */
+    .carousel { position: relative; overflow: hidden; margin: 20px auto; max-width: 600px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+    .carousel-images { display: flex; transition: transform 0.5s ease; }
+    .carousel-images img { width: 100%; height: auto; border-radius: 10px; }
+    .carousel-button { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(255, 255, 255, 0.8); border: none; cursor: pointer; padding: 5px; border-radius: 50%; }
+    .carousel-button.left { left: 10px; }
+    .carousel-button.right { right: 10px; }
+
+    /* Servicios */
+    .services { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .service { width: 300px; background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+    .service h3 { color: #003366; margin-bottom: 10px; }
+    .service p { font-size: 0.95em; color: #666; }
+
+    /* Formulario de contacto */
+    .contact-form input, .contact-form textarea {
+      width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ddd;
+    }
+    .contact-form button {
+      background-color: #003366; color: #fff; padding: 10px 20px; border: none; border-radius: 5px;
+      cursor: pointer; font-size: 1em; font-weight: bold;
+    }
+    .contact-form button:hover { background-color: #00509E; }
+
+    /* Footer */
+    footer { background-color: #003366; color: #fff; padding: 30px 20px; text-align: center; }
+    footer p { margin-bottom: 10px; }
+    footer a { color: #4CAF50; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Sobre Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#mision">Misión</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>Bienvenidos a ORGANICTECH</h1>
+      <p>Tu solución en gestión documental moderna e innovadora</p>
+    </div>
+  </section>
+
+  <!-- Sección Nosotros -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos ORGANICTECH, una empresa nueva en el ámbito de la gestión documental. Nos especializamos en digitalizar, organizar y optimizar la documentación para empresas de todos los tamaños, permitiéndoles centrarse en lo que realmente importa.</p>
+
+      <!-- Carrusel de imágenes -->
+      <div class="carousel">
+        <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-images">
+          
+          <img src="Imagen 2.jpg" alt="Imagen 2">
+          
+        </div>
+        <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección Misión -->
+  <section class="section" id="mision">
+    <div class="container">
+      <h2>Nuestra Misión</h2>
+      <p>Nuestra misión como Organictech es proporcionar soluciones integrales y personalizadas en el campo de la gestión documental y el archivo, garantizando la seguridad, accesibilidad y preservación de la información de nuestros clientes. Nos comprometemos a ofrecer servicios de alta calidad que optimicen los procesos administrativos, promoviendo la eficiencia y la innovación tecnológica para satisfacer las necesidades actuales y futuras de las organizaciones.</p>
+    </div>
+  </section>
+
+<!-- Sección Visión -->
+<section class="section" id="mision">
+  <div class="container">
+    <h2>Nuestra Visión</h2>
+    <p>Nuestra visión en Organictech es ser la empresa líder en servicios de gestión documental y archivo, reconocida por nuestra excelencia operativa, innovación constante y compromiso con la satisfacción del cliente. Aspiramos a transformar la forma en que las organizaciones manejan y preservan su información, estableciendo nuevos estándares en la industria y contribuyendo al desarrollo sostenible mediante prácticas responsables y avanzadas en la gestión de documentos y archivos.</p>
+  </div>
+</section>
+    <!-- Sección Servicios -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Digitalización de Documentos</h3>
+          <p>Convertimos documentos físicos en archivos digitales para una mejor organización y accesibilidad.</p>
+        </div>
+        <div class="service">
+          <h3>Almacenamiento Seguro</h3>
+          <p>Ofrecemos soluciones de almacenamiento en la nube, manteniendo tus documentos seguros y accesibles.</p>
+        </div>
+        <div class="service">
+          <h3>Automatización de Procesos</h3>
+          <p>Implementamos herramientas para agilizar el manejo y control de documentos en tu empresa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 ORGANICTECH. Todos los derechos reservados.</p>
+    <p> contactanos al: <a href="mailto:samueljosemartineztorres@gmail.com">samueljosemartineztorres@gmail.com</a></p>
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-images img');
+
+    function showSlide(index) {
+      if (index >= slides.length) {
+        currentSlide = 0;
+      } else if (index < 0) {
+        currentSlide = slides.length - 1;
+      } else {
+        currentSlide = index;
+      }
+      const offset = -currentSlide * 100; 
+      document.querySelector('.carousel-images
