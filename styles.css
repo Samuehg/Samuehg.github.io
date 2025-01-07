@@ -481,6 +481,77 @@ h2#bienvenidos::after {
     object-fit: cover; /* Rellena el círculo sin distorsionar la imagen */
 }
 
+/* Ajuste general para móviles y tablets */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    header .logo img {
+        width: 60px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .image-gallery img {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Ajuste específico para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .image-gallery img {
+        width: 100%;
+    }
+
+    .service-item {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Ajuste extra pequeño (pantallas menores a 480px) */
+@media (max-width: 480px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+    .contact-card {
+        padding: 10px;
+    }
+
+    .contact-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .service-item p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 /* Asegurar que la página ocupe toda la pantalla en móviles y tablets */
 html, body {
     width: 100%;
